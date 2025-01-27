@@ -1,24 +1,23 @@
-# Switch
-
-## Example
-
-```
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 local switch = require(ReplicatedStorage.Packages.switch)
 
-switch(1)
+local tru = math.random(1, 99999)
+
+switch(tru)
 {
-	[1] = function()
-
-	end
-
-	[2] = function()
-
-	end
-
-	__index = function()
-		print("default")
+	[tru] = function()
+		print("OK")
 	end
 }
-```
+
+switch(0)
+{
+	[tru] = function()
+		print("frong")
+	end,
+	__index = function()
+		print("OK")
+	end
+}
+

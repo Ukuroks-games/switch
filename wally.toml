@@ -1,22 +1,30 @@
 [package]
-name = "owner/packageName"
+name = "egor00f/switch"
 
-description = "description of package"
+description = "small lua switch implementation"
 
-version = "0.1.0"
+version = "0.1.1"
 
 registry = "https://github.com/UpliftGames/wally-index"
 
 # or server
 realm = "shared"
 
-license = ""
+license = "MIT"
 
-repository = "https://github/"
+repository = "https://github/ukuroks-games/switch"
 
-authors = ["You <you mail>"]
+authors = ["Egor00f <velikiydolbayeb@gamil.com>"]
 
-exclude = ["packageName.rbxl"]
+exclude = ["*"]
+
+include = [
+	"src",
+	"src/**",
+	"wally.toml",
+	"README.md",
+	"init.lua"
+]
 
 private = false
 
